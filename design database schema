@@ -1,0 +1,73 @@
+1 USER:
+
+user_id (Primary Key)
+
+username
+
+password
+
+email
+
+first_name
+
+last_name
+
+role (e.g., job seeker, recruiter)
+
+profile_created (timestamp)
+
+2 COMPANIES:
+
+company_id (Primary Key)
+
+company_name
+
+location
+
+industry
+
+description
+
+website
+
+3 JOBS:
+
+job_id (Primary Key)
+
+company_id (Foreign Key)
+
+job_title
+
+job_description
+
+job_location
+
+posted_date (timestamp)
+
+application_deadline (timestamp)
+
+salary
+
+job_type (e.g., full-time, part-time, contract)
+
+4 APPLICATIONS:
+
+application_id (Primary Key)
+
+job_id (Foreign Key)
+
+user_id (Foreign Key)
+
+application_date (timestamp)
+
+status (e.g., pending, reviewed, accepted, rejected)
+
+5 RESUMES:
+
+resume_id (Primary Key)
+
+user_id (Foreign Key)
+
+resume_content (could be a BLOB for storing files)
+
+uploaded_date (timestamp)
