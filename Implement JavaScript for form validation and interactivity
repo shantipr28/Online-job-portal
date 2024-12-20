@@ -1,0 +1,21 @@
+--Create JavaScript for Validation
+script.js
+document.addEventListener("DOMContentLoaded", function() {
+    const registrationForm = document.querySelector("form[action='/registration']");
+    if (registrationForm) {
+        registrationForm.addEventListener("submit", function(event) {
+            const password = document.getElementById("password").value;
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                event.preventDefault();
+            }
+        });
+    }
+});
+--Configure application.properties
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
