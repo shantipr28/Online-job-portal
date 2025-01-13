@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Portal</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <h1>Welcome to the Job Portal</h1>
+    <form action="#" th:action="@{/submitJob}" method="post">
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" required><br><br>
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required><br><br>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+        <button type="submit">Post Job</button>
+    </form>
+    <h2>Available Jobs</h2>
+    <ul>
+        <li th:each="job : ${jobs}">
+            <strong th:text="${job.title}">Job Title</strong> at
+            <em th:text="${job.company}">Company</em> in
+            <span th:text="${job.location}">Location</span>
+        </li>
+    </ul>
+</body>
+</html>
