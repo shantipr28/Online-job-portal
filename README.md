@@ -146,11 +146,9 @@ Apache Tomcat: For deploying and running the web application.
 
 ##HOW TO RUN THE PROJECT: Follow these steps to run the project locally on your system:
 
-1.Clone the repository: git clone https://https://github.com/RuchiKumari07/RuchiKumari07/tree/main
+1.Navigate to the project folder:
 
-2.Navigate to the project folder:
-
-3.Open Login.html or Register.html in your browser.
+2.Open Login.html or Register.html in your browser.
 
 FINAL REVIEW
 
