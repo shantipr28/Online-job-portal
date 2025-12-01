@@ -6,7 +6,7 @@ Features :-
 
 User Registration and Authentication Job Seeker Dashboard Employer Dashboard Admin Panel Setup:- Before you begin, ensure you have the following installed: 1.JDK 17 or higher 2.MySQL Database 3.Maven Installation Clone this repository to your local machine:
 
-git clone https://https://github.com/RuchiKumari07/RuchiKumari07/tree/main Set up the database:
+Set up the database:
 
 Install MySQL and create a new database called online job portal. Run the create_tables.sql script to create necessary tables. Configure the database connection:
 
